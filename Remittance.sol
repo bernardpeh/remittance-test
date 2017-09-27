@@ -12,8 +12,9 @@ contract Remittance {
       owner = msg.sender;
       withdrawer = _withdrawer;
       dueBlocks = block.number + _due;
-      password1 = keccak256(_password1);
-      password2 = keccak256(_password2);
+      // hash the passwords on http://emn178.github.io/online-tools/keccak_256.html
+      password1 = _password1;
+      password2 = _password2;
   }
   
   function fund() public payable returns (bool) {
