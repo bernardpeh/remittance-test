@@ -2,7 +2,7 @@
 
 Business rules:
 
-1. Owner set 2 passwords, a timeline into the future (in blocks), and a withdrawer address when deploying the contract.
+1. Owner set 2 encrypted passwords, a timeline into the future (in blocks), and a withdrawer address when deploying the contract.
 2. The passwords are encrypted in the contract.  
 3. Owner funds the contract with X ether.
 4. Outside of the contract, owner sends the unencrypted passwords to 2 parties, one password each.
