@@ -8,11 +8,11 @@ contract Remittance {
   bytes32 private password2;
   uint public dueBlocks;
   
+  // hash the passwords on http://emn178.github.io/online-tools/keccak_256.html
   function Remittance(bytes32 _password1, bytes32 _password2, uint _due, address _withdrawer) public {
       owner = msg.sender;
       withdrawer = _withdrawer;
       dueBlocks = block.number + _due;
-      // hash the passwords on http://emn178.github.io/online-tools/keccak_256.html
       password1 = _password1;
       password2 = _password2;
   }
